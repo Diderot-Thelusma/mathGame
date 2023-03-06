@@ -6,22 +6,22 @@
     <title>Math Game</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="index.css" rel="stylesheet" type="text/css" />
     <script src="index.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h2>To Do List</h2>
-          <div id='todo-list'>
-          </div>
-          <form id="create-task">
-            <input id="new-task-content" type="text" placeholder="new task" required/>
-            <button>Create</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </body>
+  <div id="welcome">
+    <h1>Welcome to the 10 Seconds Math Game!</h1>
+    <p>Can you solve as many equations as you can in 10 seconds?</p>
+    <button id="start-btn">Start Game</button>
+  </div>
+
+  <div id="game">
+    <h2></h2>
+    <input type="text" id="answer-input">
+    <p>Time Left: <span id="time"></span></p>
+    <p>Score: <span id="score"></span></p>
+  </div>
+</body>
 </html>
